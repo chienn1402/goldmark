@@ -1,0 +1,139 @@
+<div class="ground" id="ground">
+  <div class="container">
+    <h2 class="gm-text-primary font-weight-bold text-uppercase text-center">Mặt bằng tổng thể</h2>
+    <img src="../../../assets/images/line-20200320044839.png" class="d-block m-auto" alt="err?" width="45%">
+
+    <ul class="nav nav-tabs mt-4 d-flex flex-column flex-md-row justify-content-center" id="myTab" role="tablist" *ngIf="isSapphire; else diamond">
+      <li class="nav-item text-uppercase" role="presentation">
+        <a class="nav-link text-center text-md-left active" id="home-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
+          aria-selected="true">Mặt bằng tổng thể</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab2" role="tab"
+          aria-controls="profile" aria-selected="false">Mặt bằng tòa nhà sapphire 2</a>
+      </li>
+    </ul>
+
+    <ng-template #diamond>
+      <ul class="nav nav-tabs mt-4 d-flex flex-column flex-md-row justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item text-uppercase" role="presentation">
+          <a class="nav-link text-center text-md-left active" id="home-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab1"
+            aria-selected="true">Mặt bằng căn hộ</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab4" role="tab"
+            aria-controls="profile" aria-selected="false">Tổng thể tòa diamond</a>
+        </li>
+      </ul>
+    </ng-template>
+
+    <div class="tab-content" id="myTabContent" *ngIf="isSapphire">
+      <div class="tab-pane pt-3 fade show active" id="tab1" role="tabpanel" aria-labelledby="home-tab">
+        <img src="assets/images/gmc-mat-bang-tong-the.png" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab2" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/mat-bang-dien-hinh-s2.png" alt="err?" width="100%">
+      </div>
+    </div>
+    <div class="tab-content" id="myTabContent" *ngIf="!isSapphire">
+      <div class="tab-pane pt-3 fade show active" id="tab3" role="tabpanel" aria-labelledby="home-tab">
+        <img src="../../../assets/images/tầng-lẻ-2048x1705.png" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab4" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="../../../assets/images/0003-scaled.jpg" alt="err?" width="100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+    <h2 class="gm-text-primary font-weight-bold text-uppercase text-center">Mặt bằng căn hộ tiêu biểu</h2>
+    <img src="../../../assets/images/line-20200320044839.png" class="d-block m-auto" alt="err?" width="45%">
+
+    <ul class="nav nav-tabs mt-4 d-flex flex-column flex-md-row justify-content-center" id="myTab" role="tablist" *ngIf="isSapphire">
+      <li class="nav-item text-uppercase" role="presentation">
+        <a class="nav-link text-center text-md-left active" id="home-tab" data-toggle="tab" href="#tab11" role="tab" aria-controls="tab11"
+          aria-selected="true">Căn hộ 01</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab12" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 02</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab13" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 03</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab14" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 04-09</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab15" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 05-10</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab16" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 06-11</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab17" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 07</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab18" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 08</a>
+      </li>
+    </ul>
+    <ul class="nav nav-tabs mt-4 d-flex flex-column flex-md-row justify-content-center" id="myTab" role="tablist" *ngIf="!isSapphire">
+      <li class="nav-item text-uppercase" role="presentation">
+        <a class="nav-link text-center text-md-left active" id="home-tab" data-toggle="tab" href="#tab19" role="tab" aria-controls="tab11"
+          aria-selected="true">Căn hộ 3 ngủ</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab110" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ 4 ngủ</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link text-center text-md-left text-uppercase" id="profile-tab" data-toggle="tab" href="#tab111" role="tab"
+          aria-controls="profile" aria-selected="false">Căn hộ duplex</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent" *ngIf="isSapphire">
+      <div class="tab-pane pt-3 fade show active" id="tab11" role="tabpanel" aria-labelledby="home-tab">
+        <img src="assets/images/01.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab12" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/02.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab13" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/03.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab14" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/04-09.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab15" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/05-10.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab16" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/06-11.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab17" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/07.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab18" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="assets/images/08.jpg" alt="err?" width="100%">
+      </div>
+    </div>
+    <div class="tab-content" id="myTabContent" *ngIf="!isSapphire">
+      <div class="tab-pane pt-3 fade show active" id="tab19" role="tabpanel" aria-labelledby="home-tab">
+        <img src="../../../assets/images/3-ngu.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab110" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="../../../assets/images/4-ngu.jpg" alt="err?" width="100%">
+      </div>
+      <div class="tab-pane pt-3 fade" id="tab111" role="tabpanel" aria-labelledby="profile-tab">
+        <img src="../../../assets/images/boc-mai-duplex-t1-2412_Final.jpg" alt="err?" width="100%">
+      </div>
+    </div>
+  </div>
+</div>

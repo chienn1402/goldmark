@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/images/logo-diamond_tinified-20201011162040.png" alt="err?" width="180px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(hero)">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(about)">Tổng quan dự án</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(design)">Thiết kế căn hộ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(policy)">Chính sách</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(register)">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div #hero>
+  <gm-hero></gm-hero>
+</div>
+
+<div #about>
+  <gm-about></gm-about>
+  
+  <gm-utilities></gm-utilities>
+  
+  <gm-gallery-diamond></gm-gallery-diamond>
+</div>
+
+<div #design>
+  <gm-sapphire></gm-sapphire>
+</div>
+
+<div #policy>
+  <gm-policy></gm-policy>
+</div>
+
+<div #register>
+  <gm-register (registerClick)="scrollToElement(hero)"></gm-register>
+</div>

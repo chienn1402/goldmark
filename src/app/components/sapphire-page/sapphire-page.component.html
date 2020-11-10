@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/images/sapphire-logo-removebg-preview-gray.png" alt="err?" width="180px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(hero)">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(about)">Tổng quan dự án</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(design)">Thiết kế căn hộ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(policy)">Chính sách</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToElement(register)">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div #hero>
+  <gm-hero [isSapphire]="true"></gm-hero>
+</div>
+
+<div #about>
+  <gm-about [isSapphire]="true"></gm-about>
+  
+  <gm-utilities></gm-utilities>
+  
+  <gm-gallery></gm-gallery>
+</div>
+
+<div #design>
+  <gm-sapphire [isSapphire]="true"></gm-sapphire>
+</div>
+
+<div #policy>
+  <gm-policy [isSapphire]="true"></gm-policy>
+</div>
+
+<div #register>
+  <gm-register [isSapphire]="true" (registerClick)="scrollToElement(hero)"></gm-register>
+</div>

@@ -1,0 +1,52 @@
+<video *ngIf="isSapphire" class="" class="wpc_video_bg" width="100%" height="100%" preload="auto" loop autoplay [muted]="'muted'">
+  <source type="video/mp4"
+    src="https://anphatland.com.vn/wp-content/uploads/2020/08/Tiện-ích-tại-TNR-Goldmark-City-136-Hồ-Tùng-Mậu-online-video-cutter.com_.mp4">
+</video>
+
+<ng-container *ngIf="!isSapphire">
+  <img src="../../../assets/images/banner-home-2.png" alt="err?" width="100%">
+</ng-container>
+
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-0 col-lg-7 d-flex align-items-center pt-5 pt-md-0">
+        <div class="heading my-auto text-center text-md-left pt-4 pt-md-0 d-none d-lg-block">
+          <h1 class="{{ isSapphire ? 'text-sapphire-primary' : 'text-diamond-primary' }}">GOLDMARK CITY</h1>
+          <h3 class="mt-4 mt-md-0 {{ isSapphire ? 'text-sapphire-secondary' : 'text-diamond-secondary' }}">Cuộc sống thịnh vượng, hạn
+            phúc vững bền</h3>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="card card-body">
+          <h3 class="text-uppercase text-center text-md-left mb-4 {{ isSapphire ? 'text-sapphire-primary' : 'text-diamond-primary' }}">Nhận thông
+            tin dự án</h3>
+
+          <form [formGroup]="formGroup" (ngSubmit)="submit()">
+            <div class="form-group mb-4">
+              <input type="text" class="form-control form-control-lg bg-white" placeholder="Họ và tên*"
+                formControlName="name">
+            </div>
+
+            <div class="form-group mb-4">
+              <input type="text" class="form-control form-control-lg bg-white" placeholder="Email*"
+                formControlName="email">
+            </div>
+
+            <div class="form-group mb-4">
+              <input type="text" class="form-control form-control-lg bg-white" placeholder="Số điện thoại*"
+                formControlName="phone">
+            </div>
+
+            <div class="form-group">
+              <button
+                class="btn btn-lg w-100 {{ isSapphire ? 'text-sapphire-secondary bg-sapphire-primary' : 'text-diamond-secondary bg-diamond-primary' }}">Đăng
+                ký ngay</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

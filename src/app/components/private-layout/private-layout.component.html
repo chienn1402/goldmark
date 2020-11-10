@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="text-center text-uppercase my-5">Danh sách đăng ký nhận tư vấn</h1>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Họ và tên</th>
+        <th>Email</th>
+        <th>Số điện thoại</th>
+        <th>Quan tâm</th>
+        <th>Ngày đăng ký</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.target }}</td>
+        <td>{{ user.registerOn | date: 'dd/MM/yyyy' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

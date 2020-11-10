@@ -1,0 +1,43 @@
+:host {
+  display: flow-root;
+  padding-top: 4.3rem;
+
+  .section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  [class*=col] {
+    h4 {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .policy-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+
+      .policy-item {
+        line-height: 2rem;
+        padding-left: 2rem;
+
+        ul {
+          list-style: none;
+          padding-left: 1rem;
+        }
+      }
+
+      &.diamond .policy-item {
+        background: url("../../../assets/images/diamond\ \(1\).png") no-repeat left top 8px;
+        background-size: 18px;
+      }
+
+      // &.sapphire .policy-item {
+      //   background: url("../../../assets/images/gems.png") no-repeat left top 8px;
+      //   background-size: 18px;
+      // }
+    }
+  }
+}

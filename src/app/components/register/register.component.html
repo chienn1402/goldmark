@@ -1,0 +1,24 @@
+<footer class="{{ isSapphire ? 'text-sapphire-secondary bg-sapphire-primary' : 'text-diamond-secondary bg-diamond-primary' }}">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 mb-5 mb-md-0 text-center text-md-left">
+        <h4 class="text-uppercase mb-4">Liện hệ phòng kinh doanh</h4>
+        <img *ngIf="!isSapphire" src="../../../assets/images/logo-diamond_tinified-20201011162040.png" alt="err?" width="250px">
+        <img *ngIf="isSapphire" src="../../../assets/images/sapphire-logo-removebg-preview-gray.png" alt="err?" width="250px">
+        <p class="font-weight-bold text-uppercase mt-4 mb-2">Địa chỉ: KĐT Goldmark City 136 Hồ Tùng Mậu, Hà Nội</p>
+        <p class="font-weight-bold text-uppercase mt-2 mb-4">Số điện thoại: <a class="phone text-decoration-none" href="tel:0858889262">0858 889 262</a></p>
+        <button class="btn btn-lg {{ isSapphire ? 'text-sapphire-primary' : 'text-diamond-primary' }}" (click)="emitRegister()">Đăng ký nhận tư vấn ngay</button>
+      </div>
+
+      <div class="col-md-6 text-right text-center text-md-left">
+        <h4 class="text-uppercase mb-4">Lý do lựa chọn chúng tôi</h4>
+        <p class="my-2">Cam kết bảo mật thông tin cá nhân khách hàng</p>
+        <p class="my-2">Trở thành cầu nối vững chắc, chuyên nghiệp giữa khách hàng và chủ đầu tư</p>
+        <p class="my-2">Hỗ trợ tư vấn trực tiếp chuyên sâu, chọn căn, tầng đẹp nhất</p>
+        <p class="my-2">Cung cấp bảng giá gốc, hỗ trợ quý khách làm thủ tục, hợp đồng</p>
+        <p class="my-2">Khách hàng được xem nhà mẫu trực tiếp</p>
+        <p class="my-2">Không thu thêm bất cứ khoản phí nào</p>
+      </div>
+    </div>
+  </div>
+</footer>

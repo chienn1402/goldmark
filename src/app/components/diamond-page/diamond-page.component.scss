@@ -1,0 +1,57 @@
+:host {
+  overflow-x: hidden;
+
+  .navbar {
+    z-index: 9;
+    transition: all 0.3s;
+    padding: 1rem;
+    background: #6E1015;
+  
+    &-brand {
+      font-weight: 700;
+      color: #cccccc;
+      text-transform: uppercase;
+    }
+  
+    &-nav {
+      .nav-item {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-weight: 600;
+  
+        .nav-link {
+          position: relative;
+          transition: all 0.3s;
+          color: #cccccc;
+          text-transform: uppercase;
+          cursor: pointer;
+  
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ccc;
+            height: 2px;
+            width: 0px;
+            transition: all 0.3s;
+          }
+  
+          &:hover {
+            color: #fff;
+          }
+  
+          &.active {
+            color: #ccc;
+            
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

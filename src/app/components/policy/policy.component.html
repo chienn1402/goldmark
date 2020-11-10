@@ -1,0 +1,201 @@
+<div class="container">
+  <h2 class="section-heading {{ isSapphire ? 'text-sapphire-primary' : 'text-diamond-primary' }}">Chính sách bán hàng
+  </h2>
+  <img src="../../../assets/images/line-20200320044839.png" class="d-block m-auto" alt="err?" width="45%">
+</div>
+
+<div class="{{ isSapphire ? 'container-fluid' : 'container' }} pt-2 pb-4">
+  <div class="row" *ngIf="isSapphire; else diamond">
+    <div class="col-md-{{ isSapphire ? '4' : '6' }} border-right">
+      <h4 class="text-center {{ isSapphire ? 'text-sapphire-primary' : 'text-diamond-primary' }}">Chính sách chiết khấu
+      </h4>
+
+      <ul class="policy-list {{ isSapphire ? 'sapphire' : 'diamond' }}">
+        <ng-container *ngIf="!isSapphire">
+          <li class="policy-item">
+            Quà tân gia lên tới<strong class="text-danger"> 60 triệu/căn</strong>
+          </li>
+          <li class="policy-item">
+            Áp dụng cho<strong class="text-danger"> 30 khách hàng</strong> đầu tiên
+          </li>
+        </ng-container>
+
+        <ng-container *ngIf="isSapphire">
+          <li class="policy-item">
+            - Căn 04, 05, 06, 07 tầng từ 10- 35:
+            <strong class="text-danger"> chiết khấu 9.99%</strong>
+          </li>
+          <li class="policy-item">
+            - Các căn hộ còn lại:
+            <strong class="text-danger"> chiết khấu 12.99%</strong>
+          </li>
+          <li class="policy-item">
+            - Trục căn 02:
+            <strong class="text-danger"> Chiết khấu 15%</strong>
+          </li>
+          <li class="policy-item">
+            - Bốc thăm trúng thưởng
+            <strong class="text-danger"> Mer C200 </strong>
+            trị giá
+            <strong class="text-danger"> 1.7 tỷ </strong>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+
+    <div class="col-md-{{ isSapphire ? '4 border-right' : '6' }}">
+      <h4 class="text-center {{ isSapphire ? 'text-sapphire-primary' : 'text-diamond-primary' }}">Tiến độ thanh toán đối với không vay  ngân hàng
+      </h4>
+
+      <ul class="policy-list {{ isSapphire ? 'sapphire' : 'diamond' }}">
+        <ng-container *ngIf="!isSapphire">
+          <li class="policy-item">
+            <strong>Tiến độ thanh toán không vay ngân hàng</strong> <br>
+            <strong>Chiết khấu 11%</strong>
+            <ul>
+              <li>- <strong>Đặt cọc:</strong> 100 triệu ký TTĐC</li>
+              <li>- <strong>Đợt 1:</strong> Đóng 95% (bao gồm tiền đặt cọc) ký HĐMB trong vòng 10 ngày từ ngày ký TTĐC
+              </li>
+              <li>- <strong>Đợt 2:</strong> Đóng 5% (Nhận sổ hồng)</li>
+            </ul>
+          </li>
+          <li class="policy-item">
+            <strong>Tiến độ thanh toán khi vay ngân hàng</strong> <br>
+            <span>-	Hộ trợ 65% giá trị căn hộ</span> <br>
+            <span>-	Lãi suất 0%  trong thời gian HTLS 18 tháng và 24 tháng, tùy lựa chọn khách hàng</span>
+            <ul>
+              <li><strong>- Đặt cọc:</strong> 100 triệu ký TTĐC</li>
+              <li><strong>- Đợt 1:</strong> Đóng 30% (bao gồm tiền đặt cọc) ký HĐMB trong vòng 10 ngày từ ngày ký TTĐC
+              </li>
+              <li><strong>- Đợt 2:</strong> Ngân hàng giải ngân 65% GTCH lãi suất 0% trong 18 tháng - 24 tháng</li>
+              <li><strong>- Đợt 3:</strong> Đóng 5% (Nhận sổ hồng)</li>
+            </ul>
+          </li>
+        </ng-container>
+
+        <ng-container *ngIf="isSapphire">
+          <li class="policy-item">
+            <strong>Tiến độ thanh toán trả chậm 3 năm không mất lãi</strong> <br>
+            (Áp dụng cho các căn 02 & các căn hộ khác tầng 2-6 và 36-40)
+            <ul>
+              <li><strong>- Đặt cọc:</strong> 100 triệu</li>
+              <li><strong>- Đợt 1:</strong> Đóng 30% (bao gồm tiền đặt cọc) ký HĐMB, nhận nhà ngay</li>
+              <li><strong>- Đợt 2:</strong> Đóng 20% (ngày 30/8/2021)</li>
+              <li><strong>- Đợt 3:</strong> Đóng 20% (ngày 30/8/2022)</li>
+              <li><strong>- Đợt 4:</strong> Đóng 25% (ngày 30/8/2023)</li>
+              <li><strong>- Đợt 5:</strong> Đóng 5% (nhận sổ hồng)</li>
+            </ul>
+          </li>
+          <li class="policy-item">
+            <strong>Tiến độ thanh toán thông thường trong 2 năm</strong> <br>
+            (Áp dụng cho các căn khác)
+            <ul>
+              <li><strong>- Đặt cọc:</strong> 100 triệu</li>
+              <li><strong>- Đợt 1:</strong> Đóng 30% (bao gồm tiền đặt cọc) ký HĐMB</li>
+              <li><strong>- Đợt 2:</strong> Đóng 20% nhận nhà (ngày 27/12/2020)</li>
+              <li><strong>- Đợt 3:</strong> Đóng 20% (ngày 30/7/2021)</li>
+              <li><strong>- Đợt 4:</strong> Đóng 25% (ngày 30/7/2022)</li>
+              <li><strong>- Đợt 5:</strong> Đóng 5% (nhận sổ hồng)</li>
+            </ul>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+
+    <div class="col-md-4 border-right" *ngIf="isSapphire">
+      <h4 class="text-center {{ isSapphire ? 'text-sapphire-primary' : 'text-diamond-primary' }}">Tiến độ thanh toán đối
+        với vay ngân hàng
+      </h4>
+
+      <p class="pl-3">- Hỗ trợ <strong>50%</strong> GTCH với mức lãi suất <strong>0</strong>% trong <strong>18 tháng</strong></p>
+
+      <!-- <ul class="policy-list sapphire">
+        <li class="policy-item"><strong>- Đợt 1:</strong> Ký hợp đồng mua bán 20% (MSB, MB, VCB), 21% (BIDV)</li>
+        <li class="policy-item"><strong>- Đợt 2:</strong> 15 ngày làm việc kể từ khi ký HĐMB 75% (MSB, MB, VCB), 49%
+          (BIDV)</li>
+        <li class="policy-item"><strong>- Đợt 3:</strong> 25 ngày làm việc kể từ khi ký HĐMB 0% (MSB, MB, VCB), 25%
+          (BIDV)</li>
+        <li class="policy-item"><strong>- Đợt 4:</strong> Bàn giao căn hộ 0% (MSB, MB, VCB), 0% (BIDV)</li>
+        <li class="policy-item"><strong>- Đợt 5:</strong> Cấp giấy chứng nhận 5% (MSB, MB, VCB), 5% (BIDV)</li>
+      </ul> -->
+      
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th></th>
+            <th>MSB, MB, VCB</th>
+            <th>BIDV</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><strong>- Đợt 1:</strong> Ký hợp đồng mua bán</td>
+            <th>20%</th>
+            <th>21%</th>
+          </tr>
+          <tr>
+            <td><strong>- Đợt 2:</strong> 15 ngày làm việc kể từ khi ký HĐMB</td>
+            <th>75%</th>
+            <th>0%</th>
+          </tr>
+          <tr>
+            <td><strong>- Đợt 3:</strong> 25 ngày làm việc kể từ khi ký HĐMB</td>
+            <th>0%</th>
+            <th>25%</th>
+          </tr>
+          <tr>
+            <td><strong>- Đợt 4:</strong> Bàn giao căn hộ</td>
+            <th>0%</th>
+            <th>0%</th>
+          </tr>
+          <tr>
+            <td><strong>- Đợt 5:</strong> Cấp giấy chứng nhận</td>
+            <th>5%</th>
+            <th>5%</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <ng-template #diamond>
+    <div class="row">
+      <div class="col-md-6 border-right">
+        <h4 class="text-center text-diamond-primary">Tiến độ thanh toán không vay ngân hàng</h4>
+        <p><strong>Chiết khấu 11%</strong></p>
+
+        <ul class="policy-list diamond">
+          <li class="policy-item">
+            <strong>Đặt cọc:</strong> 100 triệu ký TTĐC
+          </li>
+          <li class="policy-item">
+            <strong>Đợt 1:</strong> Đóng 95% (bao gồm tiền đặt cọc) ký HĐMB trong vòng 10 ngày từ ngày ký TTĐC
+          </li>
+          <li class="policy-item">
+            <strong>Đợt 2:</strong> Đóng 5% (Nhận sổ hồng)
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h4 class="text-center text-diamond-primary">Tiến độ thanh toán khi vay ngân hàng</h4>
+
+        <p>Hộ trợ <strong>65%</strong> giá trị căn hộ</p>
+        <p>Lãi suất <strong>0%</strong>  trong thời gian HTLS <strong>18 tháng</strong> và <strong>24 tháng</strong>, tùy lựa chọn khách hàng</p>
+
+        <ul class="policy-list diamond">
+          <li class="policy-item"><strong>Đặt cọc:</strong> 100 triệu ký TTĐC</li>
+          <li class="policy-item"><strong>Đợt 1:</strong> Đóng 30% (bao gồm tiền đặt cọc) ký HĐMB trong vòng 10 ngày từ ngày ký TTĐC
+          </li>
+          <li class="policy-item"><strong>Đợt 2:</strong> Ngân hàng giải ngân 65% GTCH lãi suất 0% trong 18 tháng - 24 tháng</li>
+          <li class="policy-item"><strong>Đợt 3:</strong> Đóng 5% (Nhận sổ hồng)</li>
+        </ul>
+      </div>
+
+      <div class="col-12 mt-3">
+        <h4 class="text-center text-diamond-primary">Quà tặng tân gia lên tới 60 triệu áp dụng cho 30 khách hàng đầu tiên mua căn hộ</h4>
+      </div>
+    </div>
+  </ng-template>
+</div>

@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.gm-text-primary {
+  color: #1e2d63;
+}
+
+.gm-bg-primary {
+  background: #1e2d63;
+}
+
+.scrolled {
+  background: #000000cc;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+
+  .navbar-toggler {
+    outline: none;
+  }
+
+  .navbar-brand {
+    color: #fff;
+  }
+
+  .nav-link {
+    color: #ffffff80;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-diamond-primary {
+  color: #6E1015;
+}
+
+.text-diamond-secondary {
+  color: #ccc;
+}
+
+.bg-diamond-primary {
+  background-color: #6E1015;
+}
+
+.bg-diamond-secondary {
+  background-color: #ccc;
+}
+
+.text-sapphire-primary {
+  color: #20569B;
+}
+
+.text-sapphire-secondary {
+  color: #ccc;
+}
+
+.bg-sapphire-primary {
+  background-color: #20569B;
+}
+
+.bg-sapphire-secondary {
+  background-color: #ccc;
+}

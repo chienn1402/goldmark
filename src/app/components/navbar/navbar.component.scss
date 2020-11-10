@@ -1,0 +1,56 @@
+:host {
+  overflow-x: hidden;
+
+  .navbar {
+    z-index: 9;
+    transition: all 0.3s;
+    padding: 1rem;
+    background: #fdd133;
+  
+    &-brand {
+      font-weight: 700;
+      color: #2a9d8f;
+      text-transform: uppercase;
+    }
+  
+    &-nav {
+      .nav-item {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-weight: 600;
+  
+        .nav-link {
+          position: relative;
+          transition: all 0.3s;
+          color: #2a9d8f;
+          text-transform: uppercase;
+  
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1e756b;
+            height: 2px;
+            width: 0px;
+            transition: all 0.3s;
+          }
+  
+          &:hover {
+            color: #1e756b;
+          }
+  
+          &.active {
+            color: #1e756b;
+            
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

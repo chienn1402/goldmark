@@ -1,0 +1,29 @@
+.d-flex img {
+  margin-top: 2px;
+}
+
+.diamond {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #41b4e4;
+  padding: 0 5px;
+  // border-left: 3px solid #65c3eb;
+}
+
+.sapphire {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2e4baa;
+  padding: 0 5px;
+  // border-left: 3px solid #415ebd;
+}
+
+.btn {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
